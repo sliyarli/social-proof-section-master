@@ -4,4 +4,4 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://sliyarli.github.io/social-proof-section-master/]
