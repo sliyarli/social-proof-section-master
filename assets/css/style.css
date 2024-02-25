@@ -1,0 +1,184 @@
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  resize: none;
+  font-family: "League Spartan", sans-serif !important;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../../images/bg-pattern-top-desktop.svg"),
+    url("../../images/bg-pattern-bottom-desktop.svg") !important;
+  background-position: top left, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 510px, 860px 470px;
+}
+
+.row {
+  margin: auto 0 !important;
+}
+
+:root {
+  /* Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.about-heading,
+.rating-text {
+  color: var(--very-dark-magenta);
+}
+
+/* ABOUT SECTION */
+
+.about-heading {
+  font-size: 43px;
+  line-height: 39px;
+}
+
+.about-text {
+  font-weight: 600;
+  color: var(--dark-grayish-magenta);
+}
+
+/* RIGHT PART */
+
+.right-part {
+  gap: 14px;
+}
+
+.rating {
+  width: 400px;
+  height: 45px;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 5px;
+}
+
+.stars {
+  padding: 0 26px !important;
+}
+
+.rating-star {
+  width: 15px;
+}
+
+.rating-text {
+  font-weight: 700;
+  margin-top: 4px !important;
+  padding-left: 10px !important;
+  font-size: 14px;
+}
+
+.second-rating {
+  margin-left: 40px !important;
+}
+
+.third-rating {
+  margin-left: 80px !important;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonial {
+  background-color: var(--very-dark-magenta);
+  border-radius: 10px;
+  color: white;
+  height: 230px;
+  font-weight: 500;
+  padding: 30px !important;
+}
+.testimonial-img {
+  width: 40px;
+  border-radius: 50%;
+}
+.testimonial-status {
+  color: #cf6daa;
+}
+.testimonial-comment {
+  color: #e9e2e8;
+  font-size: 15px;
+}
+
+.second-testimonial {
+  margin-top: 20px !important;
+}
+.third-testimonial {
+  margin-top: 40px !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 0px) and (max-width: 992px) {
+  .left-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .right-part {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .about-heading,
+  .about-text {
+    text-align: center !important;
+  }
+
+  .about-heading {
+    width: 100% !important;
+  }
+
+  .about-text {
+    font-weight: 700;
+    width: 80%;
+    padding: 30px 0 !important;
+    font-size: 18px;
+  }
+
+  .about-text br {
+    display: none !important;
+  }
+
+  .rating {
+    width: 350px;
+    height: 65px;
+    border-radius: 9px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .rating-text {
+    font-size: 17px;
+  }
+
+  .second-rating,
+  .third-rating {
+    margin-left: 0 !important;
+  }
+
+  .second-testimonial,
+  .third-testimonial {
+    margin-top: 0px !important;
+  }
+}
